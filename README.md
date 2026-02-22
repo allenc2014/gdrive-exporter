@@ -1,4 +1,4 @@
-# GDriveExporter
+# Google Drive Exporter
 
 A powerful Python tool for exporting and synchronizing documents from Google Drive to your local filesystem. Supports Google Docs, native DOCX files, and other file types with intelligent conversion and organization.
 
@@ -30,7 +30,7 @@ Google already provides native support for downloading individual Google Docs as
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd GDriveExporter
+cd gdrive-exporter
 ```
 
 2. Install dependencies:
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 ### Command Line Arguments
 
 ```bash
-python main.py [OPTIONS]
+python gdrive-exporter/main.py [OPTIONS]
 ```
 
 #### Options:
@@ -63,31 +63,31 @@ python main.py [OPTIONS]
 
 #### Interactive Mode (Default)
 ```bash
-python main.py
+python gdrive-exporter/main.py
 ```
 Launches an interactive browser to navigate your Google Drive and select files/folders for export.
 
 #### Direct Path Processing
 ```bash
-python main.py --path "/My Drive/Stories/Story1/Drafts"
+python gdrive-exporter/main.py --path "/My Drive/Stories/Story1/Drafts"
 ```
 Process a specific folder or file at the given Google Drive path.
 
 #### Custom Output Directory
 ```bash
-python main.py -o "my_exports" --path "/My Drive/Documents"
+python gdrive-exporter/main.py -o "my_exports" --path "/My Drive/Documents"
 ```
 Save exports to a custom directory.
 
 #### Force Refresh
 ```bash
-python main.py --force --path "/My Drive/Stories"
+python gdrive-exporter/main.py --force --path "/My Drive/Stories"
 ```
 Re-download and reprocess all files, even if they haven't changed.
 
 #### Download All Files
 ```bash
-python main.py --download-all --path "/My Drive/Archive"
+python gdrive-exporter/main.py --download-all --path "/My Drive/Archive"
 ```
 Download all file types in the specified folder, not just documents.
 
