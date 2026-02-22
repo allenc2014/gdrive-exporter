@@ -163,6 +163,8 @@ See `requirements.txt` for the complete list of dependencies.
 
 **Important Notes Before Use:**
 
+**This tool is provided "as-is" with no guarantees or warranties. Use at your own risk.**
+
 - **Content Export**: This tool makes no claims that it will capture all content during export. Some complex formatting, embedded objects, or special Google Docs features may not be perfectly preserved.
 
 - **Markdown Conversion**: The automated conversion to Markdown is not guaranteed to be perfect. Complex layouts, tables, and advanced formatting may require manual cleanup.
