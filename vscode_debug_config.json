@@ -1,0 +1,100 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Word2MD - Interactive",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/word2md/main.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/word2md",
+            "args": ["-o", "debug_output"],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/word2md"
+            },
+            "justMyCode": true,
+            "stopOnEntry": false,
+            "presentation": {
+                "hidden": false,
+                "group": "Word2MD",
+                "order": 1
+            }
+        },
+        {
+            "name": "Debug Word2MD - Draft",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/word2md/main.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/word2md",
+            "args": ["-o", "output", "--path", "Stories, Novels and Game Ideas/Dead Clocks and Broken Crowns/Drafts", "--force"],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/word2md"
+            },
+            "justMyCode": true,
+            "stopOnEntry": false,
+            "presentation": {
+                "hidden": false,
+                "group": "Word2MD",
+                "order": 2
+            }
+        },
+        {
+            "name": "Debug Word2MD - Portraits & Pictures",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/word2md/main.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/word2md",
+            "args": ["-o", "output", "--path", "Stories, Novels and Game Ideas/Dead Clocks and Broken Crowns/Portraits & Pictures", "--force"],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/word2md"
+            },
+            "justMyCode": true,
+            "stopOnEntry": false,
+            "presentation": {
+                "hidden": false,
+                "group": "Word2MD",
+                "order": 2
+            }
+        },
+        {
+            "name": "Debug Word2MD - Custom Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/word2md/main.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/word2md",
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/word2md"
+            },
+            "justMyCode": true,
+            "stopOnEntry": false,
+            "presentation": {
+                "hidden": false,
+                "group": "Word2MD",
+                "order": 3
+            }
+        },
+        {
+            "name": "Debug Word2MD - Module Test",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "word2md.main",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/word2md",
+            "args": ["-o", "debug_output"],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/word2md"
+            },
+            "justMyCode": true,
+            "stopOnEntry": false,
+            "presentation": {
+                "hidden": false,
+                "group": "Word2MD",
+                "order": 4
+            }
+        }
+    ]
+}
